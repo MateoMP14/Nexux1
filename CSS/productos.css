@@ -92,11 +92,18 @@ header a{
 .fondo1 h1{
     color: whitesmoke;
 }
+.servicios ,.servicios2{
+    background-position:center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
 
 
 
 
-@media(min-width:720px){
+@media(min-width:1024px){
     header{
         position:;
         width:100% ;
@@ -110,4 +117,34 @@ header a{
         padding-bottom: 0;
         padding-right: 20px;
     }
+    section {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    
+    .servicios, .servicios2 {
+        width: 48%;
+    }
+    
+    .servicios h2, .servicios2 h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .internet, .serviciosextras {
+        background-color: white;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(241, 17, 17, 0.1);
+    }
+    
+    .internet h3, .serviciosextras h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+    
 }
