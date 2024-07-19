@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto'; sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #C29B61;
+    box-shadow:2px 2px 10px ;
+    color: whitesmoke;
+    background-color: chocolate;
+}
+
+button:hover{
+    background-color: black;
+}
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color:darkgoldenrod ;
+}
+
+header{
+    background-color:#C29B61
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:darkred ;
+    font-size: 1.6em
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#banner{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        )
+    ,url(/IMAGENES/NEXUX-ONE.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#banner h1{
+    color: whitesmoke;
+}
+#somos-nexux1{
+
+}
+
+#somos-nexux1.contenedor{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#somos-nexux1 h2{
+    text-align: center;
+}
+#programas{
+    background-color:rgb(30,30,30);
+    color: whitesmoke;
+    text-align: center;
+}
+
+#programas .contenedor{
+    padding: 100px  12px;
+}
+#programas h2{
+    margin-top: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+#programas h3{
+    margin-top: 0;
+    font-size: 1.0em;
+}
+
+#programas .carta{
+    background-position:center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/casas.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/empresas.jpg);
+    
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/setap.jpg);
+    
+}
+
+.puntosfavor .contenedor {
+    text-align: center;
+}
+
+.puntosfavor li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: whitesmoke;
+    height: 80vh;
+}
+.final h2{
+    font-size: 9vw ;
+}
+
+.final button{
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(30,30,40);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: cadetblue;
+}
+
+footer .contenedor{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width:100% ;
+    }
+    header .contenedor{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #banner h1{
+        font-size: 6em;
+
+    }
+    #somos-nexux1 .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+        
+
+    }
+    #somos-nexux1 .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.6em;
+
+    }
+    
+    #somos-nexux1 h2{
+        margin-top: 0px;
+    }
+    #somos-nexux1 .img-contenedor{
+        background-image:  
+        url(/IMAGENES/Img.1.png);
+        background-size: cover;
+        background-position: center center;
+        height:700px;
+        width:700px;
+
+    }
+    #programas .programas-base{
+        display: flex;
+        justify-content: center;
+    }
+    #programas h3{
+        margin-top: 0;
+        font-size: 2.3em;
+    }
+    #programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    }
+
+    .puntosfavor{
+        background-image:url(/IMAGENES/Peru.jpg) ;
+        background-repeat: no-repeat;
+        justify-content: center;
+    
+
+    }
+
+    .puntosfavor .contenedor{
+        text-align: initial;
+    }
+    .puntosfavor ul{
+        margin-left: 100px;
+    }
+    
+
+}
+
+@media (min-width:1100px){
+    #puntosfavor{
+        background-position-x:calc(100vw - 800px) ;
+    }
+}
