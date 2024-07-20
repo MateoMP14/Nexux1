@@ -206,6 +206,9 @@ footer .contenedor{
 }
 
 @media(min-width:1024px){
+    body{
+        font-weight: 0;
+    }
     header{
         position: fixed;
         width:100% ;

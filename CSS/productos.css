@@ -78,7 +78,7 @@ header a{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 75vh;
+    height: 90vh;
     background-image:linear-gradient(
         0deg,
         rgb(0,0,0,0.5),
@@ -92,20 +92,75 @@ header a{
 .fondo1 h1{
     color: whitesmoke;
 }
-.servicios ,.servicios2{
+
+.servicios h2 ,.servicios2 h2{
+    font-size: 1.5em;
+
+}
+#Opciones-generales .opcion, .opcion2, .opcion3, .opcion4, .opcion5{
     background-position:center center;
     background-size: cover;
-    padding: 50px;
+    padding: 40px;
     margin: 20px;
-    border-radius: 15px;
+
 }
+.servicios h2 , .servicios2 h2{
+    text-align: center;
+    padding: 35px;
+}
+
+.opcion , .opcion2, .opcion3, .opcion4, .opcion5{
+    background-color:rgb(30,30,30);
+    color: whitesmoke;
+    text-align: center; 
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+}
+.internet, .serviciosextras{
+    margin-top: 0;
+    font-size: 1em;
+    text-align: center;
+}
+.opcion h3 {
+    font-size: 1.8em;
+}
+.opcion:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/casas.jpg);
+}
+.opcion2:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/Empresa-2.jpg);
+    
+}
+.opcion3:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/setap.jpg);
+    
+}
+
+
+
 
 
 
 
 @media(min-width:1024px){
     header{
-        position:;
+        position:relative;
         width:100% ;
     }
     header .contenedor{
@@ -135,7 +190,7 @@ header a{
     }
     
     .internet, .serviciosextras {
-        background-color: white;
+        background-color: rgb(160, 142, 142);
         margin-bottom: 20px;
         padding: 20px;
         border-radius: 8px;
