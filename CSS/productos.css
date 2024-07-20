@@ -10,6 +10,7 @@ html{
 body{
     font-family: 'Roboto'; sans-serif;
     margin: 0;
+    line-height: 1.5;
 }
 
 h1{font-size: 3.5em;}
@@ -97,12 +98,11 @@ header a{
     font-size: 1.5em;
 
 }
-#Opciones-generales .opcion, .opcion2, .opcion3, .opcion4, .opcion5{
+#Opciones-generales .opcion, .opcion2 , .opcion3, .opcion4, .opcion5{
     background-position:center center;
     background-size: cover;
     padding: 40px;
     margin: 20px;
-
 }
 .servicios h2 , .servicios2 h2{
     text-align: center;
@@ -110,20 +110,18 @@ header a{
 }
 
 .opcion , .opcion2, .opcion3, .opcion4, .opcion5{
-    background-color:rgb(30,30,30);
     color: whitesmoke;
     text-align: center; 
     border-radius: 15px;
-    padding: 10px;
-    margin: 15px;
 }
 .internet, .serviciosextras{
     margin-top: 0;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
 }
-.opcion h3 {
-    font-size: 1.8em;
+.opcion h3,.opcion2 h3, .opcion3 h3, .opcion4 h3, .opcion5 h3 {
+    font-size: 1.7em;
 }
 .opcion:first-child{
     background-image:linear-gradient(
@@ -151,16 +149,46 @@ header a{
     url(/IMAGENES/setap.jpg);
     
 }
+.opcion4:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/Pc-ejemplo.jpg);
+    
+}
+.opcion5:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),
+    url(/IMAGENES/Mantenimiento.jpg);
+    
+}
+footer{
+    background-color: rgb(30,30,40);
+}
 
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: cadetblue;
+}
 
-
-
+footer .contenedor{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 
 
 @media(min-width:1024px){
     header{
-        position:relative;
+        position:fixed;
         width:100% ;
     }
     header .contenedor{
@@ -190,11 +218,10 @@ header a{
     }
     
     .internet, .serviciosextras {
-        background-color: rgb(160, 142, 142);
         margin-bottom: 20px;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(241, 17, 17, 0.1);
+        box-shadow: 0 0 10px rgba(239, 228, 228, 0.1);
     }
     
     .internet h3, .serviciosextras h3 {
