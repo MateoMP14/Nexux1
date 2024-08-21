@@ -10,6 +10,7 @@ html{
 body{
     font-family: 'Roboto'; sans-serif;
     margin: 0;
+    line-height: 1.5;
 }
 
 h1{font-size: 3.5em;}
@@ -65,7 +66,6 @@ header nav{
     text-align: center;
     padding-bottom: 25px;
 }
-
 header a{
     padding: 5px 12px;
     text-decoration: none;
@@ -74,6 +74,12 @@ header a{
 }
 .titulo{
     text-align: center;
+}
+.opiniones{
+    padding: 5%;
+}
+.col{
+    margin: 3%;
 }
 footer{
     background-color: rgb(30,30,40);
@@ -94,11 +100,7 @@ footer .contenedor{
 
 
 @media(min-width:1024px){
-    body{
-        font-weight: 0;
-    }
     header{
-        position: fixed;
         width:100% ;
     }
     header .contenedor{
@@ -109,5 +111,16 @@ footer .contenedor{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    titulo {
+        padding: 10%;
+        margin-top: 10%;
     }
 }
