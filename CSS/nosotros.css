@@ -75,6 +75,23 @@ header a{
 .titulo{
     text-align: center;
 }
+footer{
+    background-color: rgb(30,30,40);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: cadetblue;
+}
+
+footer .contenedor{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 
 @media(min-width:1024px){
     body{
@@ -93,3 +110,4 @@ header a{
         padding-bottom: 0;
         padding-right: 20px;
     }
+}
